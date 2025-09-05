@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
+    <title>FishGame</title>
+</head>
+
+<body>
+
+
+    <section class="gameContainer">
+        <aside class="gameDetails">
+            <h1 class="gameTitle">Fish Game</h1>
+            <div class="rules">
+                <h3 class="title">Game Rules</h3>
+                <ul>
+                    <li>🎯 Eat 20 fish to win</li>
+                    <li>🐠 At 4 fish: Become a medium fish</li>
+                    <li>🦈 At 8 fish: Become a shark</li>
+                </ul>
+            </div>
+            <div class="control">
+                <h3 class="title">Controls</h3>
+                <img src="./images/keyboardControls.png" alt="keyboardControls">
+            </div>
+
+        </aside>
+        <!-- ######################################################## -->
+        <main class="gameArea">
+            <div class="counter center">0</div>
+            <!-- ========================== -->
+            <img src="./images/Player1.gif" alt="player" class="player" id="player">
+            <img src="./images/smallFish1.gif" alt="smallFish1" class="smallFish Fish" id="smallFish1">
+            <img src="./images/smallFish2.gif" alt="smallFish2" class="smallFish Fish" id="smallFish2">
+            <img src="./images/smallFish3.gif" alt="smallFish3" class="smallFish Fish" id="smallFish3">
+            <img src="./images/smallFish4.gif" alt="smallFish4" class="smallFish Fish" id="smallFish4">
+            <img src="./images/mediumFish1.gif" alt="mediumFish1" class="mediumFish Fish" id="mediumFish1">
+            <img src="./images/mediumFish2.gif" alt="mediumFish2" class="mediumFish Fish" id="mediumFish2">
+            <img src="./images/shark.gif" alt="Shark" class="shark Fish" id="shark">
+            <!-- =========================== -->
+            <div class="popup center" id="loss">
+                <div class="tryAgain center">
+                    <div class="title ">😞 Game Over! 😞</div>
+                    <p>You've lost! Try again.</p>
+                    <div class="btn" id="losstryBtn">Try again</div>
+                </div>
+            </div>
+            <div class="popup center" id="win">
+                <div class="tryAgain center">
+                    <div class="title ">🎉 Congratulations! 🎉</div>
+                    <p>You won the game! You ate 20 fish!</p>
+                    <div class="btn" id="wintryBtn">Try again</div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
+
+
+    <script src="./Scripts/game.js"></script>
+</body>
+
+</html>
